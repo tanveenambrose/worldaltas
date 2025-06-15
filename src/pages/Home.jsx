@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import { SlRocket } from "react-icons/sl";
 
 
 const Home = () => {
@@ -8,18 +9,22 @@ const Home = () => {
     <>
       <Header />
 
-      <main className=" mx-auto container hero-section main">
-        <div className="container mx-auto grid grid-cols-6">
-          <div className="hero-content">
-            <h1 className="text-4xl"> Explore the world, One Country at a Time</h1>
+      <main className="mx-auto container bg-gray-700 text-white mt-10 px-4 hero-section main">
+        <div className="grid grid-cols-6 gap-4">
+
+          <div className="col-span-4 hero-content flex flex-col  ">
+            <h1 className="text-4xl ">Explore the world, One Country at a Time</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto veritatis, quisquam ex, vel nam minima suscipit corrupti temporibus earum accusamus animi molestias cumque. Quod a natus, rerum repellendus repudiandae aspernatur!</p>
-            <button className='btn btn-darken btn-inline bg white-box'>Start Exploring</button>
+            <button className='btn btn-darken btn-inline bg-white-box space-x-2'>
+              <span>Start Exploring</span>
+              <SlRocket />
+            </button>
           </div>
-          <div className="hero-image"></div>
-        </div>
-
-        <div className="container mx-auto grid grid-cols-6">
-
+          
+    
+            <div className="col-span-2  bg-gray-700 hero-image flex justify-center items-center-safe">
+              <img src="./world.png" alt="world"  className=""/>
+            </div>
         </div>
       </main>
 
