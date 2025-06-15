@@ -9,7 +9,7 @@ const Home = () => {
     <>
       <Header />
 
-      <main className="mx-auto container bg-gray-700 text-white mt-10 px-4 hero-section main">
+      <main className="mx-auto container bg-gray-700 text-white mt-2 rounded-b-2xl px-4 hero-section main">
         <div className="grid grid-cols-6 gap-4">
 
           <div className="col-span-4 hero-content flex flex-col  ">
@@ -23,7 +23,7 @@ const Home = () => {
           
     
             <div className="col-span-2  bg-gray-700 hero-image flex justify-center items-center-safe">
-              <img src="./world.png" alt="world"  className=""/>
+              <img src="./world.png" alt="world"  className="hover:rotate-360 transition-transform duration-2000"/>
             </div>
         </div>
       </main>
