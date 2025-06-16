@@ -7,7 +7,7 @@ import Information from '../api/Information.jsx'
 
 const About = () => {
   return (
-     <div className='bg-base-300'>
+     <div className='bg-gray-300'>
      <Header/>
      <Information/>
     <Footer/>
