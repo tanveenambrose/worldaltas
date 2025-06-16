@@ -3,7 +3,7 @@ import CountryDatas from "./CountryData.json";
 
 function Information() {
   return (
-    <section className='container mx-auto sextion-about'>
+    <section className='container mx-auto section-about mb-10'>
         <h1 className='text-3xl mt-10 text-center font-mono  '>Here Are Some Intresting Facts <br /> we're proud of</h1>
         
         

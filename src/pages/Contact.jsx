@@ -17,9 +17,9 @@ const Contact = () => {
     <>
       <Header/>
 
-      <section className='bg-black text-white '>
+      <section className='bg-gray-800 text-white '>
         <div className='py-14'>
-          <h1 className='text-center font-mono text-3xl'>Contact</h1>
+          <h1 className='text-center font-mono text-3xl'>Contact Us:</h1>
         </div>
 
         <div className='flex justify-center'>
@@ -43,7 +43,7 @@ const Contact = () => {
               <div className="mb-2 block">
                 <Label htmlFor="password" className='text-white'>Your password</Label>
               </div>
-              <TextInput id="password" name='password' type="password" placeholder='Passworld Here !' required className='px-14' />
+              <TextInput id="messege" name='messege' type="text" placeholder='Having Issue ?' required className='px-14' />
             </div>
 
             <div className="flex items-center gap-2">
@@ -51,7 +51,7 @@ const Contact = () => {
               <Label htmlFor="agree" className='text-white'>Remember me</Label>
             </div>
 
-            <Button type="submit" value='send' className='text-white btn btn-success'>Submit</Button>
+            <Button type="submit" value='send' className='text-white btn btn-success'>Send</Button>
           </form> 
         </div>
 
