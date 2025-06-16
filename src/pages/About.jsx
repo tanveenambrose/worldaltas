@@ -1,15 +1,17 @@
 import React from 'react'
 import Header from './Header'
 import Footer from './Footer'
+import Information from '../api/Information.jsx'
+
 
 
 const About = () => {
   return (
-     <>
+     <div className='bg-base-300'>
      <Header/>
-    <h1 >About Page</h1>
+     <Information/>
     <Footer/>
-    </>
+    </div>
   )
 }
 

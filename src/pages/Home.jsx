@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import { SlRocket } from "react-icons/sl";
+import Information from '../api/Information.jsx'
 
 
 const Home = () => {
@@ -27,6 +28,8 @@ const Home = () => {
             </div>
         </div>
       </main>
+
+      <Information/>
 
       <Footer />
     </>
