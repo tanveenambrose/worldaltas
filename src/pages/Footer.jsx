@@ -1,5 +1,6 @@
 import React from 'react';
-import { SlSocialTwitter, SlSocialInstagram ,SlSocialFacebook } from "react-icons/sl";
+import { SlSocialInstagram ,SlSocialFacebook,} from "react-icons/sl";
+import { SiGithub } from "react-icons/si";
 import { NavLink } from 'react-router';
 import FooterDetails from '../api/FooterDetails.json';
 import {IoCallSharp} from 'react-icons/io5';
@@ -53,8 +54,8 @@ function Footer() {
     <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
   </aside>
   <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-    <NavLink to="" target='_blank'>
-      <SlSocialTwitter className='size-6' />
+    <NavLink to="https://github.com/tanveenambrose" target='_blank'>
+      <SiGithub className='size-6' />
     </NavLink>
     <NavLink to="https://www.instagram.com/_aila_tanu_/" target='_blank'>
       <SlSocialInstagram className='size-6'/>
