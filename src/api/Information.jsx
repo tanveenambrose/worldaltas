@@ -16,11 +16,8 @@ function Information() {
   <div className="card-body">
   <h2 className="card-title font-bold text-3xl">{countryName}</h2>
     <p className='font-serif'>{capital}</p>
-    <p className='font-semibold'>{population}</p>
+    <p className='font-semibold'>Population: {population}</p>
     <p className='font-mono'>{interestingFact}</p>
-    <div className="card-actions justify-end">
-      <button className="btn">Buy Now</button>
-    </div>
   </div>
 </div>
               )
