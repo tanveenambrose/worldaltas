@@ -22,9 +22,11 @@ const Country = () => {
   return (
      <>
     <Header/>
-    <section>
-      <ul>
+    <section className='container mx-auto bg-gray-500'>
+      <ul className='grid md:grid-cols-4'>
+        {
         
+        }
       </ul>
     </section>
     <Footer/>
