@@ -3,6 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import { getCountryData } from '../api/postApi';
 import Loader from '../api/Loader';
+import CountryCard from './CountryCard';
 
 
 const Country = () => {
@@ -23,9 +24,11 @@ const Country = () => {
      <>
     <Header/>
     <section className='container mx-auto bg-gray-500'>
-      <ul className='grid md:grid-cols-4'>
+      <ul className='grid md:grid-cols-4 text-center text-white font-bold'>
         {
-        
+         countries.map((curCountry, index) => {
+          return <CountryCard country={ curCountry} key={index}/>
+         })
         }
       </ul>
     </section>

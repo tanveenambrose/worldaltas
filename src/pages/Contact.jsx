@@ -41,7 +41,7 @@ const Contact = () => {
 
             <div>
               <div className="mb-2 block">
-                <Label htmlFor="password" className='text-white'>Your password</Label>
+                <Label htmlFor="password" className='text-white'>Your problem</Label>
               </div>
               <TextInput id="messege" name='messege' type="text" placeholder='Having Issue ?' required className='px-14' />
             </div>
