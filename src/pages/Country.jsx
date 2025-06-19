@@ -24,10 +24,10 @@ const Country = () => {
      <>
     <Header/>
     <section className='container mx-auto bg-gray-500 py-10 px-4'>
-      <ul className='grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-center text-white font-bold'>
+      <ul className='grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-center text-black font-bold'>
         {
          countries.map((curCountry, index) => {
-          return <CountryCard country={ curCountry} key={index}/>
+          return <CountryCard country={curCountry} key={index}/>
          })
         }
       </ul>
