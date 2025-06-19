@@ -6,6 +6,7 @@ import Contact from './pages/Contact'
 import Country from './pages/Country'
 import About from './pages/About'
 import Error404 from './pages/Error404'
+import CountryDetails from './pages/CountryDetails'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
          <Route path='/Country' element={<Country />} />
          <Route path='/About' element={<About />} />
          <Route path='*' element={<Error404/>} />
+         <Route path='/Country/:id' element={<CountryDetails/>}/>
        </Routes>
      </BrowserRouter>
     </>

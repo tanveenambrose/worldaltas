@@ -11,11 +11,11 @@ function CountryCard({country}) {
       <img src={flags.svg} alt={flags.png} className='w-[250px] h-[150px] border-2 hover: rounded-2xl' />
       </div>
       <div>
-        <p className='font-mono text-2xl'>{name.common}</p>
+        <p className='font-mono text-2xl'>{name.common.length > 10 ? name.common.slice(0,11) +"..." : name.common}</p>
         <p className=''><span className='text-gray-400'>Capital: </span>{capital[0]}</p>
         <p className='text-sm'><span className='text-gray-400'>Population:</span> {population}</p>
         <p>{region}</p>
-        <NavLink><button className='btn btn-success border-4 rounded-4xl text-white mt-2'>See More<FaArrowRightToBracket /></button></NavLink>
+        <NavLink to={`/Country/${name.common}`}><button className='btn btn-success border-4 rounded-4xl text-black font-bold mt-2'>Read More<FaArrowRightToBracket /></button></NavLink>
       </div>
     </li>
     </>
