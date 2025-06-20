@@ -17,7 +17,7 @@ function SearchFilter({search, setSearch,filter, setFilter}) {
     </div>
 
     <div className='col-span-1 flex justify-center items-center'>
-      <select value={filter} onChange={handleSelectChange} className='bg-white px-4 py-2 border-2 rounded-2xl text-black font-semibold'>
+      <select value={filter} onChange={handleSelectChange} className='bg-white px-4 py-2 border-2 rounded-2xl text-black text-center font-semibold'>
         <option value="all">All</option>
         <option value="Africa">Africa</option>
         <option value="Americas">Americas</option>
