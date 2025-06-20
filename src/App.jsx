@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Country from './pages/Country'
@@ -11,9 +11,9 @@ import CountryDetails from './pages/CountryDetails'
 const App = () => {
   return (
     <>
-     <BrowserRouter>
+     <BrowserRouter basename="/worldaltas">
        <Routes>
-         <Route path='/worldaltas' element={<Home />} />
+         <Route path='/' element={<Home />} />
          <Route path='/Contact' element={<Contact />} />
          <Route path='/Country' element={<Country />} />
          <Route path='/About' element={<About />} />
