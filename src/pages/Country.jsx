@@ -24,6 +24,24 @@ const Country = () => {
 
   if(isPending) return <Loader/>;
 
+  const searchCountry = (country) => {
+    if (search) {
+      return country.name.common.toLowerCase().includes(search.toLowerCase());
+    }
+    return true;
+  }
+
+  const filterRegion = (country) => {
+    if(filter === "all"){
+      return country;
+    }
+    return country.region === filter;
+  }
+
+  const filterCountries = countries.filter((country) => {
+    return searchCountry(country) && filterRegion(country);
+  })
+
   return (
      <>
     <Header/>
@@ -34,7 +52,7 @@ const Country = () => {
 
       <ul className='grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-center text-black font-bold'>
         {
-         countries.map((curCountry, index) => {
+         filterCountries.map((curCountry, index) => {
           return <CountryCard country={curCountry} key={index}/>
          })
         }
