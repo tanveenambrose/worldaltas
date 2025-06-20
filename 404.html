@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content="0; URL=/worldaltas/" />
+    <script>
+      // Redirect all unknown routes to index.html for React Router
+      var pathname = window.location.pathname;
+      if (!pathname.startsWith('/worldaltas/')) {
+        window.location.href = '/worldaltas/';
+      }
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>
