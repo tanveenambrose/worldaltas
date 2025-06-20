@@ -13,7 +13,7 @@ const Country = () => {
   const [countries, setCountries]= useState([]);
 
   const [search, setSearch]= useState('');
-  const [filter, setFilter]= useState('');
+  const [filter, setFilter]= useState('all');
 
   useEffect(()=>{
     startTransition(async()=>{
