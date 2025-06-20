@@ -22,7 +22,7 @@
 <h3>Searching :</h3>
 <img src="./public/search.png"></br>
 <h3>Error Page :</h3>
-<img src="./public/error"></br>
+<img src="./public/error.jpg"></br>
 
 
 </body>
