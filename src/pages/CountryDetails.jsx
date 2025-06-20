@@ -41,9 +41,12 @@ function CountryDetails() {
 
       <div className='grid col-span-1 text-center my-auto'>
         <p className='text-3xl font-semibold text-yellow-200 mb-6'>{countries.name?.official}</p>
-         <p className='font-semibold text-yellow-200'><span className='text-gray-200'>Native Name : </span> {Object.keys(countries.name.nativeName)
+         <p className='font-semibold text-yellow-200'><span className='text-gray-200'>Native Names : </span> {Object.keys(countries.name.nativeName)
                     .map((key) => countries.name.nativeName[key].common)
                     .join(", ")}</p> 
+        <p className='font-semibold text-yellow-200'><span className='text-gray-200'>Official Names : </span> {Object.keys(countries.name.nativeName)
+                    .map((key) => countries.name.nativeName[key].official)
+                    .join(", ")}</p>
         <p className='font-semibold text-yellow-200'><span className='text-gray-200'>Capital : </span>{countries.capital}</p>
         <p className='font-semibold text-yellow-200'><span className='text-gray-200'>Population : </span>{countries.population.toLocaleString()}</p>
         <p className='font-semibold text-yellow-200'><span className='text-gray-200'>Region : </span>{countries.region}</p>
