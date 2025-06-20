@@ -5,7 +5,7 @@ function Error404() {
   return (
     <>
     <img src="/worldaltas/error.jpg" alt="" />
-    <NavLink to='/'><button>GO HOME</button></NavLink>
+    <NavLink to='/worldaltas'><button>GO HOME</button></NavLink>
     </>
   )
 }
