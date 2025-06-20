@@ -24,7 +24,7 @@ const Home = () => {
           
     
             <div className="sm:col-span-1  bg-gray-700 hero-image flex justify-center items-center-safe">
-              <img src="./world.png" alt="world"  className="hover:rotate-360 transition-transform duration-2000"/>
+              <img src="/worldaltas/world.png" alt="world"  className="hover:rotate-360 transition-transform duration-2000"/>
             </div>
         </div>
       </main>

@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 function Error404() {
   return (
     <>
-    <img src="/error.jpg" alt="" />
+    <img src="/worldaltas/error.jpg" alt="" />
     <NavLink to='/'><button>GO HOME</button></NavLink>
     </>
   )
